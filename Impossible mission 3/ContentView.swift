@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Impossible mission 3
-//
-//  Created by Khush Pareek on 1/9/25.
-//
-
 import SwiftUI
 
 struct Agent: Identifiable {
@@ -45,8 +38,6 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            
-            // 🕵️ Agents Tab
             NavigationView {
                 ZStack {
                     LinearGradient(colors: [.black, .gray.opacity(0.8)], startPoint: .top, endPoint: .bottom)
@@ -71,7 +62,7 @@ struct ContentView: View {
                                                 .foregroundColor(.white)
                                             Text(agent.role)
                                                 .font(.subheadline)
-                                                .foregroundColor(.gray)
+                                                .foregroundColor(.white)
                                         }
                                         Spacer()
                                         Image(systemName: "lock.shield.fill")
@@ -113,7 +104,6 @@ struct ContentView: View {
                 Label("Agents", systemImage: "person.3.fill")
             }
             
-            // ⏰ Timeline Tab
             NavigationStack {
                 ZStack {
                     LinearGradient(colors: [.black, .purple.opacity(0.8)], startPoint: .top, endPoint: .bottom)
